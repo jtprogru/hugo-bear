@@ -1,0 +1,17 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <!-- <div class="full-logo left">
+        <img src="{{- site.Params.label.icon | absURL -}}" alt="" aria-label="logo"
+        height="128">
+    </div> -->
+    <div class="entry-content right">
+        {{ .Content | markdownify }}
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" site.Params.socialIcons }}
+    </footer>
+</article>
+{{- end -}}
