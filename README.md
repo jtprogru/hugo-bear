@@ -5,3 +5,11 @@
 ![code-size](https://img.shields.io/github/languages/code-size/jtprogru/hugo-bear)
 
 ---
+
+## Installation
+
+```bash
+git submodule add --depth=1 https://github.com/jtprogru/hugo-bear.git themes/bear
+git submodule update --init --recursive
+```
+
