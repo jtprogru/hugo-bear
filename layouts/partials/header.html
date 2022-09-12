@@ -46,15 +46,15 @@
             {{- if site.Title }}
             <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
                 {{- if site.Params.label.icon_dark }}
-                    <div id="fav_icon_dark" class="fav_icon">
+                    <div class="fav_icon">
                         <img src="{{- site.Params.label.icon_dark | absURL -}}" alt="" aria-label="logo" height="{{- site.Params.label.iconHeight | default "30" -}}">
                     </div>
                 {{- end }}
-                {{- if site.Params.label.icon_light -}}
+                <!-- {{- if site.Params.label.icon_light -}}
                     <div id="fav_icon_light" class="fav_icon">
                         <img src="{{- site.Params.label.icon_light | absURL -}}" alt="" aria-label="logo" height="{{- site.Params.label.iconHeight | default "30" -}}">
                     </div>
-                {{- end -}}
+                {{- end -}} -->
 
                 {{- $label_text -}}
             </a>

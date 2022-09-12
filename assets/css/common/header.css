@@ -45,14 +45,12 @@ button#theme-toggle {
     margin: auto 4px;
 }
 
-body.dark #moon,
-body.dark #fav_icon_light {
+body.dark #moon {
     vertical-align: middle;
     display: none;
 }
 
-body:not(.dark) #sun,
-body:not(.dark) #fav_icon_dark {
+body:not(.dark) #sun {
     display: none;
 }
 
