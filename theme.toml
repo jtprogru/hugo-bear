@@ -5,7 +5,7 @@ name = "bear"
 license = "MIT"
 licenselink = "https://github.com/jtprogru/hugo-bear/blob/master/LICENSE"
 description = "A fast, clean, responsive Hugo theme"
-homepage = "https://jtprogru.github.io/hugo-bear/"
+homepage = "https://github.com/jtprogru/hugo-bear/"
 tags = [
   "responsive",
   "simple",
@@ -40,6 +40,6 @@ features = [
 min_version = "0.102.3"
 
 [author]
-  name = "Michael Savin"
+  name = "Michael (jtprogru) Savin"
   homepage = "https://github.com/jtprogru/"
 
