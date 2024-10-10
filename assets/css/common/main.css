@@ -66,3 +66,35 @@ div.highlight:hover .copy-code,
 pre:hover .copy-code {
     display: block;
 }
+
+div.full-logo {
+    display: flex;
+}
+div.profile-card {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+div.profile-card img {
+    border-radius: 5%;
+    max-height: 155px;
+    max-width: 100%;
+}
+
+div.left {
+    display: inline-block;
+    align-content: start;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+div.right {
+    display: inline-block;
+    align-content: end;
+    margin-left: auto;
+    margin-right: 0;
+}

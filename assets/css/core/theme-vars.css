@@ -15,6 +15,10 @@
     --hljs-bg: rgb(28, 29, 33);
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
+    --box-warning: rgba(255, 208, 155, 0.45);
+    --box-info: rgba(196, 215, 255, 0.45);
+    --box-important: rgba(255, 138, 138, 0.45);
+    --box-tip: rgba(203, 226, 181, 0.45);
 }
 
 .dark {
@@ -27,6 +31,10 @@
     --hljs-bg: rgb(46, 46, 51);
     --code-bg: rgb(55, 56, 62);
     --border: rgb(51, 51, 51);
+    --box-warning: rgba(255, 208, 155, 0.35);
+    --box-info: rgba(196, 215, 255, 0.35);
+    --box-important: rgba(255, 138, 138, 0.35);
+    --box-tip: rgba(203, 226, 181, 0.35);
 }
 
 .list {
