@@ -14,3 +14,9 @@
 git submodule add --depth=1 https://github.com/jtprogru/hugo-bear.git themes/bear
 git submodule update --init --recursive
 ```
+
+## Update
+
+```bash
+git submodule update --remote --merge
+```
