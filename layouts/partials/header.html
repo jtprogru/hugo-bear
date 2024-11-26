@@ -22,7 +22,7 @@
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
     } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark');
+        document.body.classList.remove('dark')
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
@@ -95,6 +95,28 @@
                     </svg>
                 </button>
                 {{- end }}
+
+                {{- $lang := .Lang}}
+                {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
+                {{- with site.Home.Translations }}
+                <ul class="lang-switch">
+                    {{- if $separator }}<li>|</li>{{ end }}
+                    {{- range . -}}
+                    {{- if ne $lang .Lang }}
+                    <li>
+                        <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
+                            aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
+                            {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
+                            {{- .Language.LanguageName | emojify -}}
+                            {{- else }}
+                            {{- .Lang | title -}}
+                            {{- end -}}
+                        </a>
+                    </li>
+                    {{- end -}}
+                    {{- end}}
+                </ul>
+                {{- end }}
             </div>
         </div>
         {{- $currentPage := . }}
@@ -123,6 +145,5 @@
             </li>
             {{- end }}
         </ul>
-
     </nav>
 </header>

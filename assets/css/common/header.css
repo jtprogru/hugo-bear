@@ -12,19 +12,15 @@
     display: block;
 }
 
-.fav_icon {
-    display: inline;
-}
-
 .logo,
 #menu {
     display: flex;
     margin: auto var(--gap);
 }
 
-/* .logo {
+.logo {
     flex-wrap: inherit;
-} */
+}
 
 .logo a {
     font-size: 24px;
@@ -32,7 +28,7 @@
 }
 
 .logo a img, .logo a svg {
-    display: inline-flex;
+    display: inline;
     vertical-align: middle;
     pointer-events: none;
     transform: translate(0, -10%);

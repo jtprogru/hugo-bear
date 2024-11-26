@@ -3,20 +3,11 @@
     <header class="entry-header">
         <h1>{{ .Title | markdownify }}</h1>
     </header>
-    <div class="profile-card">
-
-    <div class="full-logo left">
-        <img src="{{- .Photo.file | absURL -}}" alt="{{- .Photo.alt -}}" aria-label="logo"
-        height="{{- .Photo.height -}}">
-    </div>
-
-    <div class="entry-content right">
+    <div class="entry-content">
         {{ .Content | markdownify }}
     </div>
-    </div>
-
     <footer class="entry-footer">
-        {{ partial "social_icons.html" site.Params.socialIcons }}
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
     </footer>
 </article>
 {{- end -}}

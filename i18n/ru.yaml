@@ -33,7 +33,7 @@
   translation: "Редактировать"
 
 - id: code_copy
-  translation: "Копировать"
+  translation: "копировать"
 
 - id: code_copied
-  translation: "Скопировано"
+  translation: "скопировано!"

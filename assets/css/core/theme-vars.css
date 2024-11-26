@@ -1,10 +1,10 @@
 :root {
-    --gap: 20px;
+    --gap: 24px;
     --content-gap: 20px;
-    --nav-width: 920px;
-    --main-width: 760px;
-    --header-height: 75px;
-    --footer-height: 75px;
+    --nav-width: 1024px;
+    --main-width: 720px;
+    --header-height: 60px;
+    --footer-height: 60px;
     --radius: 8px;
     --theme: rgb(255, 255, 255);
     --entry: rgb(255, 255, 255);
@@ -12,13 +12,9 @@
     --secondary: rgb(108, 108, 108);
     --tertiary: rgb(214, 214, 214);
     --content: rgb(31, 31, 31);
-    --hljs-bg: rgb(28, 29, 33);
+    --code-block-bg: rgb(28, 29, 33);
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
-    --box-warning: rgba(255, 208, 155, 0.45);
-    --box-info: rgba(196, 215, 255, 0.45);
-    --box-important: rgba(255, 138, 138, 0.45);
-    --box-tip: rgba(203, 226, 181, 0.45);
 }
 
 .dark {
@@ -28,13 +24,9 @@
     --secondary: rgb(155, 156, 157);
     --tertiary: rgb(65, 66, 68);
     --content: rgb(196, 196, 197);
-    --hljs-bg: rgb(46, 46, 51);
+    --code-block-bg: rgb(46, 46, 51);
     --code-bg: rgb(55, 56, 62);
     --border: rgb(51, 51, 51);
-    --box-warning: rgba(255, 208, 155, 0.35);
-    --box-info: rgba(196, 215, 255, 0.35);
-    --box-important: rgba(255, 138, 138, 0.35);
-    --box-tip: rgba(203, 226, 181, 0.35);
 }
 
 .list {

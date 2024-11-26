@@ -1,3 +1,7 @@
+{{- if lt hugo.Version "0.125.7" }}
+{{- errorf "=> hugo v0.125.7 or greater is required for hugo-bear to build " }}
+{{- end -}}
+
 <!DOCTYPE html>
 <html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
 
@@ -18,7 +22,6 @@
         {{- block "main" . }}{{ end }}
     </main>
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
-
 </body>
 
 </html>
